@@ -205,3 +205,16 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+#fasttest
+#glove
+glove.6B
+glove.6B.300d.word2vec.txt
+glove.6B.300d.gensim.vectors.npy
+glove.6B.300d.gensim
+#environment
+entity
+cc.en.300.bin
+cc.en.300.bin.gz
+capgemini_address_vectors.npy
