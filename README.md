@@ -9,3 +9,8 @@ FastText + fuzzy
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 sentence Transformer BERT BASED ( all-MiniLM-L6-v2)
 <img width="1000" height="836" alt="image" src="https://github.com/user-attachments/assets/20c870a3-1aa9-4ece-95f7-2a8b02aec589" />
+
++++++++++++++++++++
+
+Google -Bert
+<img width="896" height="831" alt="image" src="https://github.com/user-attachments/assets/e15e5d47-4972-4f73-a881-ec15f9d73e9e" />
