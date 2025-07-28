@@ -12,7 +12,7 @@ import re
 def load_fasttext_model():
     fasttext.util.download_model('en', if_exists='ignore')
     model = load_model('cc.en.300.bin')
-    fasttext.util.reduce_model(model, 100)
+    #fasttext.util.reduce_model(model, 100)
     return model
 
 @st.cache_data(show_spinner=True)
@@ -61,7 +61,7 @@ def match_address(query, df, address_vectors, model, top_k=5):
     df['cosine_score'] = cosine_scr
     top_matches = df.sort_values(by='match_score', ascending=False).head(top_k)
     return top_matches[['company_name', 'address', 'city', 'fuzzy_score','cosine_score','match_score']]
-    return top_matches[['company_name', 'address', 'city', 'fuzzy_score','match_score','']]
+    #return top_matches[['company_name', 'address', 'city', 'fuzzy_score','match_score','']]
 
 # ---------------- Streamlit UI ----------------
 st.set_page_config(page_title="Capgemini Address Matcher", layout="centered")

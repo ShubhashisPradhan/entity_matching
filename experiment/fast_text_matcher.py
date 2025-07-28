@@ -38,16 +38,16 @@ addresses = df['full_address'].tolist()
 # Downloads cc.en.300.bin if not present
 fasttext.util.download_model('en', if_exists='ignore')
 model = load_model('cc.en.300.bin')
-fasttext.util.reduce_model(model, 100)
+#fasttext.util.reduce_model(model, 100)
 print("MOdel loaded----")
 # Function to get sentence vector using FastText
 def sentence_vector(text, model):
     return model.get_sentence_vector(text.lower())
 
 # Embed all addresses
-#addresses_cleaned = [clean_text(a) for a in addresses]
-#address_vectors = np.array([sentence_vector(a, model) for a in addresses_cleaned])
-#np.save("capgemini_address_vectors.npy", address_vectors)
+addresses_cleaned = [clean_text(a) for a in addresses]
+address_vectors = np.array([sentence_vector(a, model) for a in addresses_cleaned])
+np.save("capgemini_address_vectors.npy", address_vectors)
 address_vectors = np.load("capgemini_address_vectors.npy")
 
 print("Embedding Done----")
