@@ -14,3 +14,7 @@ sentence Transformer BERT BASED ( all-MiniLM-L6-v2)
 
 Google -Bert
 <img width="896" height="831" alt="image" src="https://github.com/user-attachments/assets/e15e5d47-4972-4f73-a881-ec15f9d73e9e" />
+
+
+Google - CANINE
+<img width="692" height="806" alt="image" src="https://github.com/user-attachments/assets/e036b9b9-3900-413e-acec-7771c09f9014" />
